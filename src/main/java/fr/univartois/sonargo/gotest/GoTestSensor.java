@@ -60,8 +60,6 @@ public class GoTestSensor implements Sensor {
 
 	    HashMap<String, String> nameFunction = ff.searchFunction();
 
-	    LOGGER.debug(nameFunction.toString());
-
 	    GoJunitParser junitParser = new GoJunitParser(nameFunction);
 
 	    junitParser.parse(reportPath);
